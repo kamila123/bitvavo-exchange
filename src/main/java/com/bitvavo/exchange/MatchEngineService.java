@@ -38,6 +38,7 @@ public class MatchEngineService {
 
             if(matches.isEmpty()){
                 System.out.println("No matches");
+                return;
             }
 
             StringBuilder matchString = new StringBuilder();
