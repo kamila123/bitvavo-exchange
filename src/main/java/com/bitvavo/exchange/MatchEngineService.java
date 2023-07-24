@@ -95,7 +95,7 @@ public class MatchEngineService {
             String quantityStr = formatter.format(order.getUnfilledQuantity());
 
             if (orderBook.type == Type.BUY) {
-                list.add(" " + quantityStr + " " + order.getPrice());
+                list.add(quantityStr + " " + order.getPrice());
             } else {
                 list.add(order.getPrice() + " " + quantityStr);
             }
