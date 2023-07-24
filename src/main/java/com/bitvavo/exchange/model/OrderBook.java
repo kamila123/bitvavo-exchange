@@ -3,11 +3,11 @@ package com.bitvavo.exchange.model;
 import java.util.*;
 
 public class OrderBook {
-    public final Type direction;
+    public final Type type;
     public final TreeMap<OrderKey, Order> book;
 
     public OrderBook(Type type) {
-        this.direction = type;
+        this.type = type;
         this.book = new TreeMap<>(type == Type.BUY ? SORT_BUY : SORT_SELL);
     }
 
@@ -37,7 +37,7 @@ public class OrderBook {
             Order order = entry.getValue();
             orders.add("  " + order.getPrice() + " " + order.getUnfilledQuantity() + " " + order.toString());
         }
-        if (direction == Type.SELL) {
+        if (type == Type.SELL) {
             Collections.reverse(orders);
         }
         return String.join("\n", orders);
