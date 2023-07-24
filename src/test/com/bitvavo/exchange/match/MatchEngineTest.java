@@ -1,11 +1,10 @@
-package test;
+package com.bitvavo.exchange.match;
 
-import com.bitvavo.engine.match.MatchResult;
-import com.bitvavo.engine.model.MatchDetail;
-import com.bitvavo.engine.model.Order;
-import com.bitvavo.engine.model.Status;
-import com.bitvavo.engine.model.Type;
-import com.bitvavo.engine.processor.MatchEngine;
+import com.bitvavo.exchange.model.MatchDetail;
+import com.bitvavo.exchange.model.Order;
+import com.bitvavo.exchange.model.Status;
+import com.bitvavo.exchange.model.Type;
+import com.bitvavo.exchange.processor.MatchEngine;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;

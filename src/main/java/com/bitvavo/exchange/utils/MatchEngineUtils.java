@@ -1,8 +1,8 @@
-package com.bitvavo.engine.utils;
+package com.bitvavo.exchange.utils;
 
-import com.bitvavo.engine.model.Order;
-import com.bitvavo.engine.model.Status;
-import com.bitvavo.engine.model.Type;
+import com.bitvavo.exchange.model.Order;
+import com.bitvavo.exchange.model.Status;
+import com.bitvavo.exchange.model.Type;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;

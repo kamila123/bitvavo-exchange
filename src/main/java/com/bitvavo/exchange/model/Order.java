@@ -1,4 +1,4 @@
-package com.bitvavo.engine.model;
+package com.bitvavo.exchange.model;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;

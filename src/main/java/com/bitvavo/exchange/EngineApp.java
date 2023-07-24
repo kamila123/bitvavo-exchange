@@ -1,4 +1,4 @@
-package com.bitvavo.engine;
+package com.bitvavo.exchange;
 
 public class EngineApp {
     public static void main(String[] args) {

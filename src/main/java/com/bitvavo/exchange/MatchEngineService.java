@@ -1,10 +1,10 @@
-package com.bitvavo.engine;
+package com.bitvavo.exchange;
 
-import com.bitvavo.engine.match.MatchResult;
-import com.bitvavo.engine.model.MatchDetail;
-import com.bitvavo.engine.model.Order;
-import com.bitvavo.engine.processor.MatchEngine;
-import com.bitvavo.engine.utils.MatchEngineUtils;
+import com.bitvavo.exchange.match.MatchResult;
+import com.bitvavo.exchange.model.MatchDetail;
+import com.bitvavo.exchange.model.Order;
+import com.bitvavo.exchange.processor.MatchEngine;
+import com.bitvavo.exchange.utils.MatchEngineUtils;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

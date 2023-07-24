@@ -1,7 +1,7 @@
-package com.bitvavo.engine.match;
+package com.bitvavo.exchange.match;
 
-import com.bitvavo.engine.model.MatchDetail;
-import com.bitvavo.engine.model.Order;
+import com.bitvavo.exchange.model.MatchDetail;
+import com.bitvavo.exchange.model.Order;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

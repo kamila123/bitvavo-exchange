@@ -1,15 +1,15 @@
-package com.bitvavo.engine.processor;
+package com.bitvavo.exchange.processor;
 
-import com.bitvavo.engine.match.MatchResult;
-import com.bitvavo.engine.model.Order;
-import com.bitvavo.engine.model.OrderBook;
-import com.bitvavo.engine.model.Status;
-import com.bitvavo.engine.model.Type;
+import com.bitvavo.exchange.match.MatchResult;
+import com.bitvavo.exchange.model.Order;
+import com.bitvavo.exchange.model.OrderBook;
+import com.bitvavo.exchange.model.Status;
+import com.bitvavo.exchange.model.Type;
 
 import java.math.BigDecimal;
 
-import static com.bitvavo.engine.model.Type.BUY;
-import static com.bitvavo.engine.model.Type.SELL;
+import static com.bitvavo.exchange.model.Type.BUY;
+import static com.bitvavo.exchange.model.Type.SELL;
 
 public class MatchEngine {
 
