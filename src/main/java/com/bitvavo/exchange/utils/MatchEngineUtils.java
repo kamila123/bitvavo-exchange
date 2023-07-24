@@ -6,6 +6,7 @@ import com.bitvavo.exchange.model.Type;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.Timestamp;
@@ -13,9 +14,9 @@ import java.time.Instant;
 
 public class MatchEngineUtils {
 
-    public static String generateMd5(String str) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+    public static String generateMd5(String str) throws NoSuchAlgorithmException {
         
-        byte[] bytesOfMessage = str.getBytes("UTF-8");
+        byte[] bytesOfMessage = str.getBytes(StandardCharsets.UTF_8);
 
         MessageDigest md = MessageDigest.getInstance("MD5");
 
