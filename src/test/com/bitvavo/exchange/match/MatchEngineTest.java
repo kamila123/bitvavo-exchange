@@ -19,7 +19,7 @@ import static org.junit.Assert.assertArrayEquals;
 
 class MatchEngineTest {
 
-    static Long USER_A = 34567890L;
+    static Long USER = 34567890L;
     long sequenceId = 0;
     MatchEngine engine = new MatchEngine();
 
@@ -66,13 +66,13 @@ class MatchEngineTest {
     Order createOrder(Type type, String price, String quantity) {
         this.sequenceId++;
         var order = new Order();
-        order.setId(this.sequenceId << 4);
+        order.setId(this.sequenceId);
         order.setSequenceId(this.sequenceId);
         order.setType(type);
         order.setPrice(fromBigDecimalToString(price));
         order.setQuantity(fromBigDecimalToString(quantity));
         order.setStatus(Status.CREATED);
-        order.setUserId(USER_A);
+        order.setUserId(USER);
         order.setCreatedTime(Timestamp.from(Instant.now()));
         return order;
     }
